@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background: url('../img/juegos.jpg') no-repeat center; 
+/*     background-color: #F2E8B6; */
+    background-size: cover;
+    font-family: 'Carter One', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+/* header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #041926;
+    text-align: center;
+} */
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: sans-serif;
+}
+
+h1{
+    margin: 0;
+    color: white;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-juego{
+    width: 98%;
+    height: 95vh;
+    margin: auto;
+    background: #f2e8b6ea;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-juego #imagen{
+    width: 30%;
+    height: 95%;
+    margin-left: 10px ;
+}
+
+.container-juego #letras{
+    margin-left: 50px ;
+}
+
+#palabra_a_adivinar{
+    margin: 20px auto;
+    text-align: center;
+    height: 3em;
+}
+
+#palabra_a_adivinar span{
+    vertical-align: bottom;
+    font-size: 4rem;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    width: 60px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block; /* sin esto, por ser un elemento de línea, no tomaría el width */
+}
+
+#letras{
+    margin-top: 100px ;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+} 
+
+#letras button{
+    padding: 10px 20px;
+    background-color: #F26D3D;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5%;
+    border: 0;
+    font-weight: 700;
+}
+
+#letras button:disabled{
+    color: rgb(212, 212, 212);
+    background-color: #292929;
+    cursor: not-allowed;
+}
+
+button#jugar, 
+button#ayuda{
+    background-color: #06314d;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    position: absolute;
+}
+
+button#jugar{
+    top :20px;
+    right: 10px;
+}
+
+button#ayuda{
+    top :90px;
+    right: 10px;
+}
+
+button#jugar:disabled{
+    background-color: #888888;
+    border: solid 2px rgb(56, 56, 56);
+    color: rgb(233, 233, 233);
+    cursor: not-allowed;
+}
+
+#imgSuccess{
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+#imgSuccess img{
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+}
+
+button.swal2-confirm.swal2-styled{
+    background-color: #F26D3D;
+}

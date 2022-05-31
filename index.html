@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- registro pwa -->
+    <meta name="description" content="Ahorcado: un juego de js">
+
+    <meta name="theme-color" content="#F26D3D">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./img/img7.png">
+    <link rel="apple-touch-icon" href="./img/img7.png">
+    <link rel="apple-touch-startup-image" href="./img/img7.png">
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Ahorcado</title>
+</head>
+<body>
+<!--     <header>
+        <h1>Ahorcado</h1>
+    </header> -->
+    <div class="content">
+        <div class="container-juego">
+            <img id="imagen" src="img/img0.png" alt="Ahorcado" />
+            <div>
+                <button id="jugar" onclick="iniciar()"><i class="fa-solid fa-play"></i> Nuevo juego</button>
+                <button id="ayuda"> <i class="fa-solid fa-square-question mr-3"></i>Ayuda</button>
+
+                <div id="imgSuccess">
+ 
+                </div>
+                <p id="palabra_a_adivinar" class="mt-3">
+                </p>
+
+                <div id="letras">
+                    <button>a</button>
+                    <button>b</button>
+                    <button>c</button>
+                    <button>d</button>
+                    <button>e</button>
+                    <button>f</button>
+                    <button>g</button>
+                    <button>h</button>
+                    <button>i</button>
+                    <button>j</button>
+                    <button>k</button>
+                    <button>l</button>
+                    <button>m</button>
+                    <button>n</button>
+                    <button>ñ</button>
+                    <button>o</button>
+                    <button>p</button>
+                    <button>q</button>
+                    <button>r</button>
+                    <button>s</button>
+                    <button>t</button>
+                    <button>u</button>
+                    <button>v</button>
+                    <button>w</button>
+                    <button>x</button>
+                    <button>y</button>
+                    <button>z</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/funciones.js"></script>
+    <script src="js/pwa.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="js/juego.js"></script>
+</body>
+</html>
