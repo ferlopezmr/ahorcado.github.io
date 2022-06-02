@@ -37,7 +37,7 @@ function cambiarTematica(t){
 /* click en iniciar juego */
 function iniciar(){
     btn_ayuda.style.cssText = 'display:block;';
-    imagen.src = 'img/img0.png';
+    imagen.src = './img/img0.png';
     imagenSuccess.style.cssText = 'display:none;';
     imagenSuccess.innerHTML = ``;
     btn.innerHTML = `<i class="fa-solid fa-shuffle"></i> <span class="n-d-mobile"> Cambiar palabra </span>`;
@@ -90,7 +90,7 @@ function click_letras(event){
 
     if( acerto == false ){
         cant_errores++;
-        const source = `img/img${cant_errores}.png` ;
+        const source = `./img/img${cant_errores}.png` ;
         imagen.src = source;
     }
 
@@ -102,7 +102,7 @@ function click_letras(event){
             text: `la palabra era ${palabraAdivinar.nombre}`
         })
         imagenSuccess.style.cssText = 'display:flex;';
-        imagenSuccess.innerHTML = `<img src="img/sad.gif" class="imgSuccess"/>`;
+        imagenSuccess.innerHTML = `<img src="./img/sad.gif" class="imgSuccess"/>`;
 
         game_over();
         
@@ -116,13 +116,13 @@ function click_letras(event){
             background: '#fff',
             backdrop: `
               rgba(0,0,123,0.4)
-              url("img/confeti.png")
+              url("./img/confeti.png")
               left top
               no-repeat
             `
         })
         imagenSuccess.style.cssText = 'display:flex;';
-        imagenSuccess.innerHTML = `<img src="img/${palabraAdivinar.nombre}.gif" class="imgSuccess"/>`;
+        imagenSuccess.innerHTML = `<img src="./img/${palabraAdivinar.nombre}.gif" class="imgSuccess"/>`;
         game_over( );
     }
 }
