@@ -76,11 +76,11 @@ let peliculas = {
     bg: 'peliculas.jpg',
     palabras: [
         {
-            nombre: 'Coraline',
+            nombre: 'coraline',
             pista: 'botones'
         },
         {
-            nombre: 'Spirit',
+            nombre: 'spirit',
             pista:  'Ya nadie me va dominaar'
         },
         {
@@ -88,7 +88,7 @@ let peliculas = {
             pista: 'Muchisimas gracias, doy clases los jueves'
         },
         {
-            nombre: 'Madagascar',
+            nombre: 'madagascar',
             pista: 'Un leon, un hipopotamo, una jirafa y una ze...'
         },
     ]
